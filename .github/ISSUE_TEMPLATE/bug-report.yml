@@ -1,0 +1,77 @@
+name: "🐛 Relato de Bug"
+description: "Crie um relatório de bug para nos ajudar a melhorar"
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reservar um tempo para relatar este problema! Por favor, preencha o formulário abaixo com o máximo de detalhes possível.
+
+  - type: input
+    id: bug-summary
+    attributes:
+      label: "Resumo do Bug"
+      description: "Uma descrição clara e concisa do que é o bug."
+      placeholder: "Ex: O botão de login não funciona na versão mobile"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Passos para Reproduzir"
+      description: "Conte-nos exatamente como o bug acontece. Passos numerados ajudam muito."
+      placeholder: |
+        1. Vá para '...'
+        2. Clique em '...'
+        3. Role a página até '...'
+        4. Veja o erro aparecer
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Comportamento Esperado"
+      description: "O que você esperava que acontecesse?"
+      placeholder: "Ex: O usuário deveria ser redirecionado para o dashboard."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Ambiente onde o bug ocorre"
+      options:
+        - Produção (Live)
+        - Homologação (Staging)
+        - Desenvolvimento (Localhost)
+    validations:
+      required: true
+
+  - type: textarea
+    id: Context
+    attributes:
+      label: "Informações do Sistema (Contexto)"
+      description: "Dispositivo, Sistema Operacional, Navegador ou versões de software relevantes."
+      placeholder: "Ex: iPhone 13, iOS 16, Safari / Google Chrome v114"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Antes de enviar"
+      description: "Certifique-se de que seguiu as boas práticas do projeto."
+      options:
+        - label: "Eu verifiquei se não há uma issue existente para o mesmo problema."
+          required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Prints ou Vídeos"
+      description: "Arraste e solte imagens ou links de vídeo aqui para nos ajudar a visualizar o problema."
+    validations:
+      required: false
