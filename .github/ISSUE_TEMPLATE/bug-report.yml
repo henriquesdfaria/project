@@ -2,6 +2,7 @@ name: "🐛 Relato de Bug"
 description: "Crie um relatório de bug para nos ajudar a melhorar"
 title: "[BUG]: "
 labels: ["bug", "triage"]
+projects: ["Kanban"]
 type: bug
 body:
   - type: markdown
