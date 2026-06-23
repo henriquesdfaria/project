@@ -9,15 +9,6 @@ body:
       value: |
         Obrigado por reservar um tempo para relatar este problema! Por favor, preencha o formulário abaixo com o máximo de detalhes possível.
 
-  - type: input
-    id: bug-summary
-    attributes:
-      label: "Resumo do Bug"
-      description: "Uma descrição clara e concisa do que é o bug."
-      placeholder: "Ex: O botão de login não funciona na versão mobile"
-    validations:
-      required: true
-
   - type: textarea
     id: steps-to-reproduce
     attributes:
