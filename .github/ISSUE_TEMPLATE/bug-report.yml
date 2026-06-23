@@ -15,9 +15,9 @@ body:
       label: "Passos para Reproduzir"
       description: "Conte-nos exatamente como o bug acontece. Passos numerados ajudam muito."
       value: |
-      ## Alteracao 1
-      - onde mexer
-        - mexi aqui
+        ## Alteracao 1
+        - onde mexer
+          - mexi aqui
     validations:
       required: true
 
