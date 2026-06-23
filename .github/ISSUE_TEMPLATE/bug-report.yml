@@ -3,7 +3,6 @@ description: "Crie um relatório de bug para nos ajudar a melhorar"
 title: "[BUG]: "
 labels: ["bug", "triage"]
 projects: ["henriquesdfaria/projects/6"]
-type: bug
 body:
   - type: markdown
     attributes:
