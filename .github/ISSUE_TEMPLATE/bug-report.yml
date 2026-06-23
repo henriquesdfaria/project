@@ -2,7 +2,7 @@ name: "🐛 Relato de Bug"
 description: "Crie um relatório de bug para nos ajudar a melhorar"
 title: "[BUG]: "
 labels: ["bug", "triage"]
-type: "Bug"
+type: "bug"
 body:
   - type: markdown
     attributes:
